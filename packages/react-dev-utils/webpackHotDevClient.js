@@ -85,6 +85,7 @@ var connection = new WebSocket(
     protocol: scriptUrl.protocol === 'https:' ? 'wss' : 'ws',
     hostname: scriptUrl.hostname,
     port: scriptUrl.port,
+    auth: scriptUrl.auth,
     // Hardcoded in WebpackDevServer
     pathname: '/sockjs-node',
     slashes: true,
